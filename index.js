@@ -4,7 +4,9 @@ let cardMen = document.querySelector(".cardMen");
 let cardgirl = document.querySelector(".cardgirl");
 let aboutPage = document.querySelector(".about");
 let contactus = document.querySelector(".contact");
-
+let cart = [];
+let cartCount = document.querySelector(".cartCount");
+let cartContainer = document.querySelector(".cartItems");
 
 
 
@@ -132,6 +134,41 @@ function addItem(){
 
 
 }
+
+
+function addProduct(button){
+
+    let card = button.closest(".crd");
+    let img = card.querySelector("img").src;
+    let title = card.querySelector("h3").innerText;
+
+    cart.push({image:img,name:title});
+    updateCart();
+}
+
+function updateCart(){
+
+    cartContainer.innerHTML = "";
+    cartCount.innerText = cart.length;
+
+    cart.forEach(item=>{
+        cartContainer.innerHTML += `
+            <div class="cartItem">
+                <img src="${item.image}">
+                <p>${item.name}</p>
+            </div>
+        `;
+    });
+}
+
+function closeCart(){
+    document.querySelector(".addCart").style.display="none";
+}
+
+
+
+
+
  
 function addToCart(){
    alert("Added To Cart");
