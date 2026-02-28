@@ -30,6 +30,7 @@
                     <a id="about" onclick=" about()">About</a>
                     <a id="contact" onclick="contact()">Contact</a>
                     <i onclick="addItem()" class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    <span class="cartCount">0</span>
                 </li>
             </ul>
         </nav>
@@ -61,7 +62,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i><br>
-                        <button onclick="add(item1) ">Add To Cart</button>
+                       <button onclick="addProduct(this)">Add To Cart</button> <!-- 🔴 ADDED -->
                     </div>
                 </div>
                 <div class="crd">
@@ -73,7 +74,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i><br>
-                        <button>Add To Cart</button>
+                      <button onclick="addProduct(this)">Add To Cart</button> <!-- 🔴 ADDED -->
                     </div>
                 </div>
                 <div class="crd">
@@ -85,7 +86,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i><br>
-                        <button>Add To Cart</button>
+                      <button onclick="addProduct(this)">Add To Cart</button> <!-- 🔴 ADDED -->
                     </div>
                 </div>
             </div>
@@ -107,7 +108,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i><br>
-                        <button>Add To Cart</button>
+                      <button onclick="addProduct(this)">Add To Cart</button> <!-- 🔴 ADDED -->
                     </div>
                 </div>
                 <div class="crd">
@@ -119,7 +120,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i><br>
-                        <button>Add To Cart</button>
+                       <button onclick="addProduct(this)">Add To Cart</button> <!-- 🔴 ADDED -->
                     </div>
                 </div>
                 <div class="crd">
@@ -131,7 +132,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i><br>
-                        <button>Add To Cart</button>
+                       <button onclick="addProduct(this)">Add To Cart</button> <!-- 🔴 ADDED -->
                     </div>
                 </div>
             </div>
@@ -149,7 +150,7 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                 <div class="btn">
                     <button>Buy Now</button>
-                    <button onclick="addToCart()">Add To Cart</button>
+                 <button onclick="addProduct(this)">Add To Cart</button> <!-- 🔴 ADDED -->
 
                 </div>
                 <div class="btns">
@@ -162,6 +163,9 @@
 
         <!-- add to cart -->
         <div class="addCart">
+              <h2>Your Cart</h2> <!-- 🔴 ADDED -->
+             <div class="cartItems"></div> <!-- 🔴 ADDED -->
+             <button onclick="closeCart()" class="closeBtn">Close</button> <!-- 🔴 ADDED -->
 
         </div>
 
