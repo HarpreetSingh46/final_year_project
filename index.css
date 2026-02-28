@@ -180,7 +180,7 @@ nav ul{
     background-color: rgb(2, 146, 146);
     cursor: pointer;
     border-radius: 22px;
-    transition: 0.9 ease;
+    
 }
 .trending img{
     width: 55%;
@@ -190,7 +190,7 @@ nav ul{
 .trending:hover{
     width: 530px;
     height: 330px;
-    transition: 0.7s ease;
+
     cursor: pointer;
 }
 
