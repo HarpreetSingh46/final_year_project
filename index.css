@@ -371,6 +371,56 @@ nav ul{
     cursor: pointer;
 
 }
+.cartCount{
+    background: red;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 50%;
+    font-size: 13px;
+    position: relative;
+    top: -10px;
+    left: -8px;
+}
+
+.addCart{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100vh;
+    background: white;
+    box-shadow: -5px 0px 15px rgba(0,0,0,0.3);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 5000;
+}
+
+.cartItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.cartItem img{
+    width: 60px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.closeBtn{
+    width: 100%;
+    padding: 10px;
+    background: rgb(1,131,131);
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
 /* ============================= */
 /* 📱 TABLET RESPONSIVE (992px) */
 /* ============================= */
@@ -456,6 +506,22 @@ nav ul{
 /* ============================= */
 
 @media (max-width: 600px){
+    .card .crd:hover{
+        transition: none;
+        width: 90%;
+        height: auto;
+    }
+
+    .trending:hover{
+        transition: none;
+        width: 95%;
+        height: auto;
+    }
+
+    .contact img:hover{
+        transition: none;
+        width: 90%;
+    }
 
     nav{
         flex-direction: column;
