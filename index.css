@@ -110,6 +110,7 @@ nav ul{
     display: flex;
     justify-content: center;
     padding: 22px;
+      flex-wrap: wrap;
 }
 .card .crd {
     width: 300px;
