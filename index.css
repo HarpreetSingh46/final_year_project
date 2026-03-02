@@ -503,7 +503,30 @@ nav ul{
         margin-top: 20px;
     }
 }
+#themeToggle{
+    margin-left: 15px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 20px;
+}
 
+/* LIGHT THEME DEFAULT */
+body{
+    background-color: white;
+    color: black;
+}
+
+/* DARK THEME */
+.dark-theme{
+    background-color: black;
+    color: white;
+}
+
+.dark-theme nav{
+    background-color: black;
+}
 
 /* ============================= */
 /* 📱 MOBILE RESPONSIVE (600px) */
