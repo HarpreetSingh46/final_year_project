@@ -503,6 +503,8 @@ nav ul{
         margin-top: 20px;
     }
 }
+/* ================= THEME BUTTON ================= */
+
 #themeToggle{
     margin-left: 15px;
     padding: 6px 12px;
@@ -510,22 +512,57 @@ nav ul{
     cursor: pointer;
     font-size: 18px;
     border-radius: 20px;
-}
-
-/* LIGHT THEME DEFAULT */
-body{
-    background-color: white;
-    color: black;
-}
-
-/* DARK THEME */
-.dark-theme{
-    background-color: black;
+    background: black;
     color: white;
 }
 
+/* Smooth animation */
+*{
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* ================= DARK THEME ================= */
+
+.dark-theme{
+    background-color: #111;
+}
+
+/* Make ALL text white in dark mode */
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme p,
+.dark-theme a,
+.dark-theme span,
+.dark-theme li,
+.dark-theme button {
+    color: white !important;
+}
+
+/* Navbar */
 .dark-theme nav{
-    background-color: black;
+    background-color: #111 !important;
+}
+
+/* Cards & sections */
+.dark-theme .crd,
+.dark-theme .trending,
+.dark-theme .aboutus,
+.dark-theme .connectText,
+.dark-theme .footer,
+.dark-theme .addCart{
+    background-color: #222 !important;
+}
+
+/* Letter section */
+.dark-theme .letter{
+    background-color: black !important;
+}
+
+/* Button color change in dark */
+.dark-theme #themeToggle{
+    background: white;
+    color: black;
 }
 
 /* ============================= */
